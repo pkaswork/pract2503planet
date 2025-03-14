@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя семья - мой космос</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a>
+                <img src="img/logo.svg" width="100" height="100" alt="Логотип">
+            </a>
+            <ul>
+                <li><a href="index.html#about">О нас</a></li>
+                <li><a href="index.html#event">Мероприятия</a></li>
+                <li><a href="index.html#search">Поиск</a></li>
+                <li><a href="index.html#contacts">Контакты</a></li>
+            </ul>
+            <a href="register.html">Регистрация</a>
+            <a href="index.html#login">Авторизация</a>
+            <a href="profile.html">Личный кабинет</a>
+            <button>Сменить тему</button>
+        </nav>
+    </header>
+    <main>
+        <h1>Пензенский планетарий</h1>
+        <section>
+            <h2>Регистрация</h2>
+            <form action="#">
+                <label for="register-email">E-mail:</label>
+                <input type="email" name="register-email" id="register-email" required>
+                <label for="register-name">Имя:</label>
+                <input type="text" name="register-name" id="register-name" required>
+                <label for="register-last-name">Фамилия:</label>
+                <input type="text" name="register-last-name" id="register-last-name" required>
+                <label for="register-age-num">Возраст:</label>
+                <input type="number" name="register-age-num" id="register-age-num" required>
+                <input type="range" name="register-age-range" id="register-age-range">
+                <fieldset>
+                    <legend>Пол:</legend>
+
+                    <div>
+                        <input type="radio" id="male" name="sex" value="male">
+                        <label for="male">Мужской</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="female" name="sex" value="female" required>
+                        <label for="female">Женский</label>
+                    </div>
+
+                </fieldset>
+                <label for="register-pass">Пароль</label>
+                <input type="password" name="register-pass" id="register-pass" required>
+
+                <label for="register-pass2">Пароль</label>
+                <input type="password" name="register-pass2" id="register-pass2" required>
+
+                <label for="family-pic">Выберите свою фотографию:</label>
+
+                <input type="file" id="family-pic" name="family-pic" accept="image/png, image/jpeg">
+
+                <label for="register-privacy-yes">Согласи на обработку персональных данных</label>
+                <input type="checkbox" name="register-privacy-yes" id="register-privacy-yes" required>
+                <button type="button" id="register-add-member">Добавить члена семьи</button>
+                
+                <label for="register-name-member">Имя:</label>
+                <input type="text" name="register-name-member" id="register-name-member">
+                <label for="register-last-name">Фамилия:</label>
+                <input type="text" name="register-last-name" id="register-last-name">
+                <label for="register-age-num">Возраст:</label>
+                <input type="number" name="register-age-num" id="register-age-num">
+                <input type="range" name="register-age-range" id="register-age-range">
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <h2>Контаты</h2>
+            <p>
+                Телефон: <a href="tel:+74842234567">+7 (4842) 23-45-67</a> <br>
+                e-mail: <a href="mailto:family@cosmos.ru">family@cosmos.ru</a>
+            </p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="register.html">Регистрация</a></li>
+                    <li><a href="events.html">Мероприятия</a></li>
+                    <li><a href="profile.html">Личный кабинет</a></li>
+
+                </ul>
+            </nav>
+        </section>
+    </footer>
+</body>
+
+</html>
