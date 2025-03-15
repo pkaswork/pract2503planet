@@ -18,6 +18,7 @@
             <ul>
                 <li><a href="index.html#about">О нас</a></li>
                 <li><a href="index.html#event">Мероприятия</a></li>
+                <li><a href="shedulevents.html">Расписание мероприятий</a></li>                
                 <li><a href="index.html#search">Поиск</a></li>
                 <li><a href="index.html#contacts">Контакты</a></li>
             </ul>
@@ -32,6 +33,7 @@
         <section>
             <h2>Регистрация</h2>
             <form action="#">
+                <h3>Пользователя</h3>
                 <label for="register-email">E-mail:</label>
                 <input type="email" name="register-email" id="register-email" required>
                 <label for="register-name">Имя:</label>
@@ -39,18 +41,18 @@
                 <label for="register-last-name">Фамилия:</label>
                 <input type="text" name="register-last-name" id="register-last-name" required>
                 <label for="register-age-num">Возраст:</label>
-                <input type="number" name="register-age-num" id="register-age-num" required>
-                <input type="range" name="register-age-range" id="register-age-range">
+                <input type="number" name="register-age-num" id="register-age-num" min="0" max="180" required>
+                <input type="range" name="register-age-range" id="register-age-range" min="0" max="180" >
                 <fieldset>
                     <legend>Пол:</legend>
 
                     <div>
-                        <input type="radio" id="male" name="sex" value="male">
+                        <input type="radio" id="male" name="register-sex" value="male">
                         <label for="male">Мужской</label>
                     </div>
 
                     <div>
-                        <input type="radio" id="female" name="sex" value="female" required>
+                        <input type="radio" id="female" name="register-sex" value="female" required>
                         <label for="female">Женский</label>
                     </div>
 
@@ -67,15 +69,26 @@
 
                 <label for="register-privacy-yes">Согласи на обработку персональных данных</label>
                 <input type="checkbox" name="register-privacy-yes" id="register-privacy-yes" required>
-                <button type="button" id="register-add-member">Добавить члена семьи</button>
-                
+                <h3>Данные о члене семьи</h3>
                 <label for="register-name-member">Имя:</label>
                 <input type="text" name="register-name-member" id="register-name-member">
-                <label for="register-last-name">Фамилия:</label>
-                <input type="text" name="register-last-name" id="register-last-name">
-                <label for="register-age-num">Возраст:</label>
-                <input type="number" name="register-age-num" id="register-age-num">
-                <input type="range" name="register-age-range" id="register-age-range">
+                <label for="register-last-name-member">Фамилия:</label>
+                <input type="text" name="register-last-name-member" id="register-last-name-member">
+                <label for="register-age-num-member">Возраст:</label>
+                <input type="number" name="register-age-num-member" id="register-age-num-member">
+                <input type="range" name="register-age-range-member" id="register-age-range-member">
+                <label for="register-sex-member">Пол:</label>
+                <!-- <input list="list-sex" id="register-sex-member" name="register-sex-member">
+                <datalist id="list-sex">
+                    <option value="male">Мужской</option>
+                    <option value="female">Женский</option>
+                </datalist> -->
+                <select name="register-sex-member" id="register-sex-member">
+                    <!-- <option value="">Выберите значение</option> -->
+                    <option value="male">Мужской</option>
+                    <option value="female">Женский</option>                    
+                </select>
+                <button type="button" id="register-add-member">Добавить члена семьи</button>
                 <button type="submit">Зарегистрироваться</button>
             </form>
         </section>
