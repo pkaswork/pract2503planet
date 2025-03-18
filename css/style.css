@@ -1,0 +1,33 @@
+/* Переменные */
+
+:root {
+    --basic-black: #000000;
+    --basic-white: #ffffff;
+    --basic-neutral: #add8e6;
+}
+
+/* Глобальные */
+
+body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: var(--basic-black);
+    text-transform: uppercase;
+    background-color: var(--basic-neutral);
+    background-image: url("../img/back.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.main-header-logo{
+    background-color: var(--basic-white);
+}
+
+.main-header-logo img {
+    background-color: var(--basic-neutral);
+}
