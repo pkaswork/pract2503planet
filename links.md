@@ -1,0 +1,1 @@
+[генератор фавиконок](https://www.favicon-generator.org/)
