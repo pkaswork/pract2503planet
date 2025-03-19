@@ -4,6 +4,8 @@
     --basic-black: #000000;
     --basic-white: #ffffff;
     --basic-neutral: #add8e6;
+    --basic-light: #ccecf7;
+    --basic-dark: #3a5c67;
 }
 
 /* Глобальные */
@@ -18,16 +20,111 @@ body {
     font-weight: 700;
     color: var(--basic-black);
     text-transform: uppercase;
-    background-color: var(--basic-neutral);
-    background-image: url("../img/back.jpg");
-    background-position: top center;
-    background-repeat: no-repeat;
+    background-color: var(--basic-light);
+    /* background-image: url("../img/back.jpg"); */
+    /* background-position: top center; */
+    /* background-repeat: no-repeat; */
 }
 
-.main-header-logo{
-    background-color: var(--basic-white);
-}
-
+.main-header-logo,
 .main-header-logo img {
-    background-color: var(--basic-neutral);
+    background-color: var(--basic-light);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main-navigation a {
+    color: var(--basic-black);
+}
+
+.site-navigation,
+.footer-nav ul,
+.popular-list {
+    list-style: none;
+}
+
+.site-navigation-current a:not([href]) {
+    background-color: var(--basic-light);
+}
+
+/* User navigation */
+
+.site-navigation a,
+.footer-nav a {
+    color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.footer-nav a:hover,
+.footer-nav a:focus,
+.link:hover,
+.link:focus {
+    color: var(--basic-dark);
+}
+
+/* Популярные мероприятия */
+
+
+.polular-item {
+    width: 400px;
+    border: 7px solid var(--basic-white);
+}
+
+.polular-item p {
+    text-align: center;
+}
+
+.polular-item a {
+    color: var(--basic-black)
+}
+
+.polular-item a:hover,
+.polular-item a:focus {
+    color: var(--basic-dark);
+}
+
+/* Button */
+
+.button {
+    font: inherit;
+    text-align: center;
+    color: var(--basic-black);
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color: var(--basic-light);
+    border: none;
+}
+
+.button:hover,
+.button:focus {
+    color: var(--basic-dark);
+}
+
+.button:disabled {
+    cursor: default;
+    opacity: 0.5;
+    color: var(--basic-black);
+}
+
+/* footer */
+
+.footer-phone {
+    color: inherit;
+}
+
+/* Не печатать шапку и подвал */
+
+@media print {
+    header, 
+    footer {
+        display: none;
+    }
 }
